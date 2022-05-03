@@ -1,39 +1,56 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# 👏 Flutter ToolBar [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/MIT)
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://ko-fi.com/zuyenz)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+<p>A flutter package which display the library is a library with dynamic toolbars and beautiful animation ...</p>
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+The source code is **100% Dart**, and everything resides in the [/lib](https://github.com/ThuyenPV/flutter_toolbar/tree/main/lib) folder.
 
-## Features
+# 🔅 Gifs
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+![fullscreen](screenshots/demo.gif)                                                                                                                                                        |                                                                                                                                                          |                                                                                                                                                          |
 
-## Getting started
+# 💻 Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  flutter_toolbar: <latest version>
 ```
 
-## Additional information
+# ❔ Usage
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+### Import this class
+
+```dart
+import 'package:flutter_toolbar/flutter_toolbar.dart';
+```
+
+### Flutter ToolBar
+
+```dart
+    FlutterToolbar(
+        toolbarItems: [
+            ToolbarItemData(
+                title: 'Edit',
+                color: Colors.pinkAccent,
+                icon: Icons.edit,
+            )
+        ],
+    ),
+```
+
+# 👍 How to Contribute
+
+1. Fork it
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create new Pull Request
+
+## Support us
+
+You can support us by becoming a patron on Patreon, any support is much appreciated.
+
+[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com)

@@ -116,13 +116,14 @@ class _FlutterToolbarState extends State<FlutterToolbar> {
                 longPressYLocation: details.localPosition.dy,
               );
             },
-            onLongPressEnd: (LongPressEndDetails details) {
+            onLongPressEnd: (_) {
               _updateLongPressedItemsFlags(longPressYLocation: 0);
             },
             onLongPressCancel: () {
               _updateLongPressedItemsFlags(longPressYLocation: 0);
             },
             child: ListView.builder(
+              shrinkWrap: true,
               controller: scrollController,
               padding: const EdgeInsets.all(10),
               itemCount: widget.toolbarItems.length,
